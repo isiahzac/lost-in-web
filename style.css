@@ -8,5 +8,62 @@
 
 body {
     font-family: "Poppins", sans-serif;
-    background: red;
+    background: white;
+}
+
+
+header {
+    border: 2px solid green;
+    width: 100%;
+    height: 15vh;
+}
+
+/* Primer div del header */
+
+.container-nav {
+    border: 2px solid red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+
+}
+
+.imagen-nav img {
+    width: 20px;
+    height: 10px;
+    margin: 0 20px;
+}
+
+nav {
+    border: 2px solid orange;
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav li {
+    display: inline;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+/* Segundo div del header */
+
+.container-buscador {
+    border: 2px solid red;
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+
+.container-buscador .imagen-npm {
+    width: 40px;
+    height: 15px;
+}
+
+form img {
+    width: 20px;
+    height: 20px;
 }
