@@ -11,46 +11,48 @@ body {
     background: white;
 }
 
+/* Header */
 
 header {
-    border: 2px solid skyblue;
     width: 100%;
-    height: 110px;
+    height: 105px;
 }
 
 /* Primer div del header */
 
 .container-nav {
-    border: 2px solid red;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 50px;
-
+    border-bottom: 1px solid lightgray;
 }
 
 .imagen-nav {
-    border: 1px solid red;
+
     margin-left: 25px;
     font-size: 13px;
 }
 
-.imagen-nav img {
+.corazon {
     width: 20px;
     margin-right: 1rem;
 }
 
 nav {
-    border: 2px solid orange;
-    margin-right: 20px;
+    width: 600px;
 }
 
 nav ul{
     list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 nav a {
     text-decoration: none;
+    color: black;
 }
 
 nav li {
@@ -64,7 +66,6 @@ nav li {
 /* Segundo div del header */
 
 .container-buscador {
-    border: 2px solid red;
     display: flex;
     align-items: center;
     height: 50px;
@@ -78,6 +79,7 @@ nav li {
 }
 
 .bar-search {
+    border: 1px solid lightgrey;
     width: 80vw;
     height: 4vh;
 }
@@ -85,6 +87,7 @@ nav li {
 input::placeholder{
     padding-left: 30px;
 }
+
 .container-buscador button {
     height: 4vh;
     width: 80px;
@@ -94,7 +97,6 @@ input::placeholder{
 }
 
 .links {
-    border: 2px solid red;
     margin-left: 30px;
     width: 130px;
     height: 3vh;
@@ -112,8 +114,18 @@ input::placeholder{
 }
 
 .links .join {
-    border: 1px solid gray;
+    border: 1px solid lightgrey;
     height: 3vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.links .login {
+    height: 3vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 form .img-search {
@@ -127,30 +139,28 @@ form .img-search {
 
 
 
-/* First section of the body */
+/* First Section of the body */
 
 .container1 {
-    border: 2px solid blue;
+    width: 100%;
     height: 600px;
+    background: rgba(232,217,217,.3);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: rgba(232,217,217,.3);
 }
 
 .container1 h1 {
     height: 100px;
-    border: 2px solid brown;
     font-size: 80px;
-    text-align: center;
+    
 }
 
 .article1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 2px solid yellow;
     width: 25%;
     height: 12vh;
     text-align: center;
@@ -159,7 +169,7 @@ form .img-search {
 }
 
 .section-links {
-    border: 2px solid rgb(246, 48, 48);
+
     height: 12vh;
     width: 25%;
     display: flex;
@@ -168,7 +178,6 @@ form .img-search {
 }
 
 .section-links a {
-    border: 2px solid black;
     height: 30px;
     width: 200px;
     text-align: center;
@@ -191,14 +200,16 @@ form .img-search {
 
 
 
-/* Second section*/
+/* Second Section*/
 
 .container2 {
-    border: 2px solid blue;
-    height: 550px;
+    border: 1px solid blue;
+    width: 100%;
+    height: 500px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     background: rgba(232,217,217,.3);
 }
 
@@ -209,9 +220,8 @@ form .img-search {
 
 .container2 h2 {
     text-align: center;
-    width: 50%;
-    border: 2px solid brown;
-    font-size: 40px;
+    width: 760px;
+    font-size: 35px;
     background-color: rgba(255,204,53,.4);
     transform: skew(9deg,0deg);
     font-style: italic;
@@ -220,9 +230,61 @@ form .img-search {
 }
 
 .container2 article {
-    border: 2px solid yellow;
     width: 35vw;
     height: 80px;
     text-align: center;
     margin-top: 10px;
+}
+
+
+/* Third Section*/
+
+.container3 {
+    width: 100%;
+    height: 550px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: rgba(232,217,217,.3);
+}
+
+.container3 div {
+    width: 350px;
+    height: 280px;
+    margin-top: 50px;
+}
+
+.container3 div img {
+    height: 30px;
+    margin-left: 30px;
+}
+
+.container3 div h3 {
+    width: 60%;
+    height: 30px;
+    padding-top: 10px;
+    padding-left: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 22px;
+    color: #ED1C24;
+}
+
+.container3 div p {
+    height: 150px;
+    width: 65%;
+    margin-left: 30px;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.container3 button {
+    height: 50px;
+    width: 480px;
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    box-shadow: 6px 6px 0 rgba(128,83,35,.2);
+    margin-left: 50px;
+    margin-right: 50px  ;
 }
