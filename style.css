@@ -1,6 +1,6 @@
 * {
-    padding: 0;
-    margin: 0;
+    padding: 0px;
+    margin: 0px;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
@@ -69,6 +69,8 @@ nav li {
     display: flex;
     align-items: center;
     height: 50px;
+    width: 100%;
+    box-shadow: 0 3px lightgray;
 }
 
 .container-buscador .imagen-npm {
@@ -79,14 +81,23 @@ nav li {
 }
 
 .bar-search {
-    border: 1px solid lightgrey;
+    border:none;
     width: 80vw;
     height: 4vh;
-}
-
-input::placeholder{
+    background-color: rgb(240, 239, 239);
+    background-image: url(assets/spaces_BedheEKvvT4UZlMvZ9G7_uploads_za6fdm14Cd0XMFkw6WAc_magnifying-glass.webp);
+    background-repeat: no-repeat;
+    background-position: left 8px center;
+    background-size: 15px 15px;
     padding-left: 30px;
 }
+
+.bar-search:focus {
+    outline: none;
+}
+
+
+
 
 .container-buscador button {
     height: 4vh;
@@ -94,6 +105,7 @@ input::placeholder{
     background:#fb3b49;
     color: white;
     border: none;
+    cursor: pointer;
 }
 
 .links {
@@ -154,6 +166,7 @@ form .img-search {
 .container1 h1 {
     height: 100px;
     font-size: 80px;
+    text-align: center;
     
 }
 
@@ -196,6 +209,7 @@ form .img-search {
 .section-links .link2 {
     color: black;
     border: none;
+    background: white;
 }
 
 
@@ -284,6 +298,7 @@ form .img-search {
     background-color: black;
     color: white;
     box-shadow: 6px 6px 0 rgba(128,83,35,.2);
-    margin-left: 50px;
-    margin-right: 50px  ;
+    margin-right: 50px;
+    border: none;
 }
+
